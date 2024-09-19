@@ -1,7 +1,7 @@
 package repository;
 
-import model.Estudiante;
+import model.Estudiantes;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface EstudianteRepositorio extends JpaRepository<Estudiante,Integer> {
+public interface EstudianteRepositorio extends JpaRepository<Estudiantes,Integer> {
 }

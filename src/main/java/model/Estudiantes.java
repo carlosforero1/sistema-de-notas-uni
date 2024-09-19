@@ -6,15 +6,13 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
 
-import java.util.Date;
-
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
 @EqualsAndHashCode
-public class Estudiante {
+public class Estudiantes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -23,7 +21,5 @@ public class Estudiante {
     private Integer codigo;
     private String correoPersonal;
     private String correoInstitucional;
-    private Date fechaIngreso;
-
-
+    private String contrasena;
 }
